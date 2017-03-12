@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2739BC2A1E74BAF100B38AD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2739BC291E74BAF100B38AD3 /* Assets.xcassets */; };
+		2739BC2C1E74BD0C00B38AD3 /* MasterVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739BC2B1E74BD0C00B38AD3 /* MasterVenue.swift */; };
+		2739BC2E1E74BF9E00B38AD3 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739BC2D1E74BF9E00B38AD3 /* Images.swift */; };
+		2739BC301E74C00D00B38AD3 /* MiscFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739BC2F1E74C00D00B38AD3 /* MiscFiles.swift */; };
+		2739BC321E74C0B300B38AD3 /* TextPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739BC311E74C0B300B38AD3 /* TextPosts.swift */; };
+		2739BC331E74C2D500B38AD3 /* AWSMobileHubHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DA5ADB1E74224C0018FBA7 /* AWSMobileHubHelper.framework */; };
+		2782A61F1E7434CB00810108 /* PlacesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782A61E1E7434CB00810108 /* PlacesViewCell.swift */; };
+		2782A6211E74373000810108 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782A6201E74373000810108 /* Place.swift */; };
+		2782A6231E743AB500810108 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782A6221E743AB500810108 /* TestViewController.swift */; };
+		2796B1DF1E74C31900F5E163 /* AWSConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2796B1DD1E74C31900F5E163 /* AWSConfiguration.swift */; };
+		2796B1E01E74C31900F5E163 /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2796B1DE1E74C31900F5E163 /* AWSMobileClient.swift */; };
+		27D530041E73F3C800B0C6DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D530031E73F3C800B0C6DF /* AppDelegate.swift */; };
+		27D530061E73F3C800B0C6DF /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D530051E73F3C800B0C6DF /* MainMenuViewController.swift */; };
+		27D530091E73F3C800B0C6DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D530071E73F3C800B0C6DF /* Main.storyboard */; };
+		27D5300E1E73F3C800B0C6DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D5300C1E73F3C800B0C6DF /* LaunchScreen.storyboard */; };
+		27D530191E73F3C800B0C6DF /* locateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D530181E73F3C800B0C6DF /* locateTests.swift */; };
+		27D530241E73F7B800B0C6DF /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D530231E73F7B800B0C6DF /* QRScannerController.swift */; };
+		27DA5AC11E741CAC0018FBA7 /* Sdk in Resources */ = {isa = PBXBuildFile; fileRef = 27DA5AC01E741CAC0018FBA7 /* Sdk */; };
+		27DA5AC81E741D670018FBA7 /* AWSCognitoIdentityProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DA5AC41E741D670018FBA7 /* AWSCognitoIdentityProvider.framework */; };
+		27DA5AC91E741D680018FBA7 /* AWSCognitoIdentityProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27DA5AC41E741D670018FBA7 /* AWSCognitoIdentityProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27DA5ACA1E741D680018FBA7 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DA5AC51E741D670018FBA7 /* AWSCore.framework */; };
+		27DA5ACB1E741D680018FBA7 /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27DA5AC51E741D670018FBA7 /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27DA5ACC1E741D680018FBA7 /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DA5AC61E741D670018FBA7 /* AWSDynamoDB.framework */; };
+		27DA5ACD1E741D680018FBA7 /* AWSDynamoDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27DA5AC61E741D670018FBA7 /* AWSDynamoDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27DA5ACE1E741D680018FBA7 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DA5AC71E741D670018FBA7 /* AWSS3.framework */; };
+		27DA5ACF1E741D680018FBA7 /* AWSS3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27DA5AC71E741D670018FBA7 /* AWSS3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27DA5AD41E741F520018FBA7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DA5AD31E741F520018FBA7 /* libz.tbd */; };
+		27DA5AD61E741F610018FBA7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DA5AD51E741F610018FBA7 /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27D530151E73F3C800B0C6DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27D52FF81E73F3C700B0C6DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27D52FFF1E73F3C700B0C6DF;
+			remoteInfo = locate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27DA5AD01E741D680018FBA7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				27DA5ACF1E741D680018FBA7 /* AWSS3.framework in Embed Frameworks */,
+				27DA5AC91E741D680018FBA7 /* AWSCognitoIdentityProvider.framework in Embed Frameworks */,
+				27DA5ACD1E741D680018FBA7 /* AWSDynamoDB.framework in Embed Frameworks */,
+				27DA5ACB1E741D680018FBA7 /* AWSCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2739BC291E74BAF100B38AD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2739BC2B1E74BD0C00B38AD3 /* MasterVenue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterVenue.swift; sourceTree = "<group>"; };
+		2739BC2D1E74BF9E00B38AD3 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		2739BC2F1E74C00D00B38AD3 /* MiscFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiscFiles.swift; sourceTree = "<group>"; };
+		2739BC311E74C0B300B38AD3 /* TextPosts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextPosts.swift; sourceTree = "<group>"; };
+		2782A61E1E7434CB00810108 /* PlacesViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesViewCell.swift; sourceTree = "<group>"; };
+		2782A6201E74373000810108 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		2782A6221E743AB500810108 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		2796B1DD1E74C31900F5E163 /* AWSConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSConfiguration.swift; sourceTree = "<group>"; };
+		2796B1DE1E74C31900F5E163 /* AWSMobileClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSMobileClient.swift; sourceTree = "<group>"; };
+		27D530001E73F3C800B0C6DF /* locate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = locate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D530031E73F3C800B0C6DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27D530051E73F3C800B0C6DF /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		27D530081E73F3C800B0C6DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27D5300D1E73F3C800B0C6DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27D5300F1E73F3C800B0C6DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27D530141E73F3C800B0C6DF /* locateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = locateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D530181E73F3C800B0C6DF /* locateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locateTests.swift; sourceTree = "<group>"; };
+		27D5301A1E73F3C800B0C6DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27D530231E73F7B800B0C6DF /* QRScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
+		27DA5AC01E741CAC0018FBA7 /* Sdk */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sdk; sourceTree = "<group>"; };
+		27DA5AC21E741CF20018FBA7 /* Sdk */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sdk; sourceTree = "<group>"; };
+		27DA5AC31E741D140018FBA7 /* Aws */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Aws; path = Sdk/Aws; sourceTree = "<group>"; };
+		27DA5AC41E741D670018FBA7 /* AWSCognitoIdentityProvider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognitoIdentityProvider.framework; path = Sdk/Aws/AWSCognitoIdentityProvider.framework; sourceTree = "<group>"; };
+		27DA5AC51E741D670018FBA7 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = Sdk/Aws/AWSCore.framework; sourceTree = "<group>"; };
+		27DA5AC61E741D670018FBA7 /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSDynamoDB.framework; path = Sdk/Aws/AWSDynamoDB.framework; sourceTree = "<group>"; };
+		27DA5AC71E741D670018FBA7 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = Sdk/Aws/AWSS3.framework; sourceTree = "<group>"; };
+		27DA5AD31E741F520018FBA7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		27DA5AD51E741F610018FBA7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		27DA5ADB1E74224C0018FBA7 /* AWSMobileHubHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSMobileHubHelper.framework; path = Sdk/AmazonAws/AWSMobileHubHelper.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27D52FFD1E73F3C700B0C6DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2739BC331E74C2D500B38AD3 /* AWSMobileHubHelper.framework in Frameworks */,
+				27DA5AD61E741F610018FBA7 /* libsqlite3.tbd in Frameworks */,
+				27DA5AD41E741F520018FBA7 /* libz.tbd in Frameworks */,
+				27DA5ACE1E741D680018FBA7 /* AWSS3.framework in Frameworks */,
+				27DA5AC81E741D670018FBA7 /* AWSCognitoIdentityProvider.framework in Frameworks */,
+				27DA5ACC1E741D680018FBA7 /* AWSDynamoDB.framework in Frameworks */,
+				27DA5ACA1E741D680018FBA7 /* AWSCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27D530111E73F3C800B0C6DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27D52FF71E73F3C700B0C6DF = {
+			isa = PBXGroup;
+			children = (
+				27DA5AC41E741D670018FBA7 /* AWSCognitoIdentityProvider.framework */,
+				27DA5AC51E741D670018FBA7 /* AWSCore.framework */,
+				27DA5AC61E741D670018FBA7 /* AWSDynamoDB.framework */,
+				27DA5AC71E741D670018FBA7 /* AWSS3.framework */,
+				27DA5AC31E741D140018FBA7 /* Aws */,
+				27DA5AC21E741CF20018FBA7 /* Sdk */,
+				27D530021E73F3C800B0C6DF /* locate */,
+				27D530171E73F3C800B0C6DF /* locateTests */,
+				27D530011E73F3C800B0C6DF /* Products */,
+				27DA5AC01E741CAC0018FBA7 /* Sdk */,
+				27DA5AD21E741F520018FBA7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		27D530011E73F3C800B0C6DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27D530001E73F3C800B0C6DF /* locate.app */,
+				27D530141E73F3C800B0C6DF /* locateTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27D530021E73F3C800B0C6DF /* locate */ = {
+			isa = PBXGroup;
+			children = (
+				2796B1DD1E74C31900F5E163 /* AWSConfiguration.swift */,
+				2796B1DE1E74C31900F5E163 /* AWSMobileClient.swift */,
+				27D530031E73F3C800B0C6DF /* AppDelegate.swift */,
+				27D530051E73F3C800B0C6DF /* MainMenuViewController.swift */,
+				27D530231E73F7B800B0C6DF /* QRScannerController.swift */,
+				27D530071E73F3C800B0C6DF /* Main.storyboard */,
+				2782A6221E743AB500810108 /* TestViewController.swift */,
+				2782A61E1E7434CB00810108 /* PlacesViewCell.swift */,
+				27D5300C1E73F3C800B0C6DF /* LaunchScreen.storyboard */,
+				2782A6201E74373000810108 /* Place.swift */,
+				2739BC2B1E74BD0C00B38AD3 /* MasterVenue.swift */,
+				2739BC2D1E74BF9E00B38AD3 /* Images.swift */,
+				2739BC2F1E74C00D00B38AD3 /* MiscFiles.swift */,
+				2739BC311E74C0B300B38AD3 /* TextPosts.swift */,
+				2739BC291E74BAF100B38AD3 /* Assets.xcassets */,
+				27D5300F1E73F3C800B0C6DF /* Info.plist */,
+			);
+			path = locate;
+			sourceTree = "<group>";
+		};
+		27D530171E73F3C800B0C6DF /* locateTests */ = {
+			isa = PBXGroup;
+			children = (
+				27D530181E73F3C800B0C6DF /* locateTests.swift */,
+				27D5301A1E73F3C800B0C6DF /* Info.plist */,
+			);
+			path = locateTests;
+			sourceTree = "<group>";
+		};
+		27DA5AD21E741F520018FBA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27DA5ADB1E74224C0018FBA7 /* AWSMobileHubHelper.framework */,
+				27DA5AD51E741F610018FBA7 /* libsqlite3.tbd */,
+				27DA5AD31E741F520018FBA7 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27D52FFF1E73F3C700B0C6DF /* locate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27D5301D1E73F3C800B0C6DF /* Build configuration list for PBXNativeTarget "locate" */;
+			buildPhases = (
+				27D52FFC1E73F3C700B0C6DF /* Sources */,
+				27D52FFD1E73F3C700B0C6DF /* Frameworks */,
+				27D52FFE1E73F3C700B0C6DF /* Resources */,
+				27DA5AD01E741D680018FBA7 /* Embed Frameworks */,
+				27DA5AD11E741DC30018FBA7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = locate;
+			productName = locate;
+			productReference = 27D530001E73F3C800B0C6DF /* locate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27D530131E73F3C800B0C6DF /* locateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27D530201E73F3C800B0C6DF /* Build configuration list for PBXNativeTarget "locateTests" */;
+			buildPhases = (
+				27D530101E73F3C800B0C6DF /* Sources */,
+				27D530111E73F3C800B0C6DF /* Frameworks */,
+				27D530121E73F3C800B0C6DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27D530161E73F3C800B0C6DF /* PBXTargetDependency */,
+			);
+			name = locateTests;
+			productName = locateTests;
+			productReference = 27D530141E73F3C800B0C6DF /* locateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27D52FF81E73F3C700B0C6DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = hackathon;
+				TargetAttributes = {
+					27D52FFF1E73F3C700B0C6DF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AZQ652M9DQ;
+						ProvisioningStyle = Automatic;
+					};
+					27D530131E73F3C800B0C6DF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AZQ652M9DQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 27D52FFF1E73F3C700B0C6DF;
+					};
+				};
+			};
+			buildConfigurationList = 27D52FFB1E73F3C700B0C6DF /* Build configuration list for PBXProject "locate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27D52FF71E73F3C700B0C6DF;
+			productRefGroup = 27D530011E73F3C800B0C6DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27D52FFF1E73F3C700B0C6DF /* locate */,
+				27D530131E73F3C800B0C6DF /* locateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27D52FFE1E73F3C700B0C6DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D5300E1E73F3C800B0C6DF /* LaunchScreen.storyboard in Resources */,
+				2739BC2A1E74BAF100B38AD3 /* Assets.xcassets in Resources */,
+				27DA5AC11E741CAC0018FBA7 /* Sdk in Resources */,
+				27D530091E73F3C800B0C6DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27D530121E73F3C800B0C6DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27DA5AD11E741DC30018FBA7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27D52FFC1E73F3C700B0C6DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D530061E73F3C800B0C6DF /* MainMenuViewController.swift in Sources */,
+				2782A61F1E7434CB00810108 /* PlacesViewCell.swift in Sources */,
+				2796B1E01E74C31900F5E163 /* AWSMobileClient.swift in Sources */,
+				2782A6211E74373000810108 /* Place.swift in Sources */,
+				2739BC2C1E74BD0C00B38AD3 /* MasterVenue.swift in Sources */,
+				27D530041E73F3C800B0C6DF /* AppDelegate.swift in Sources */,
+				2782A6231E743AB500810108 /* TestViewController.swift in Sources */,
+				2739BC2E1E74BF9E00B38AD3 /* Images.swift in Sources */,
+				2739BC321E74C0B300B38AD3 /* TextPosts.swift in Sources */,
+				27D530241E73F7B800B0C6DF /* QRScannerController.swift in Sources */,
+				2796B1DF1E74C31900F5E163 /* AWSConfiguration.swift in Sources */,
+				2739BC301E74C00D00B38AD3 /* MiscFiles.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27D530101E73F3C800B0C6DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D530191E73F3C800B0C6DF /* locateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27D530161E73F3C800B0C6DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27D52FFF1E73F3C700B0C6DF /* locate */;
+			targetProxy = 27D530151E73F3C800B0C6DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27D530071E73F3C800B0C6DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27D530081E73F3C800B0C6DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27D5300C1E73F3C800B0C6DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27D5300D1E73F3C800B0C6DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27D5301B1E73F3C800B0C6DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27D5301C1E73F3C800B0C6DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27D5301E1E73F3C800B0C6DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AZQ652M9DQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sdk/Aws",
+					"$(PROJECT_DIR)/Sdk/AmazonAws",
+				);
+				INFOPLIST_FILE = locate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keanur.locate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		27D5301F1E73F3C800B0C6DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AZQ652M9DQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sdk/Aws",
+					"$(PROJECT_DIR)/Sdk/AmazonAws",
+				);
+				INFOPLIST_FILE = locate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keanur.locate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		27D530211E73F3C800B0C6DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AZQ652M9DQ;
+				INFOPLIST_FILE = locateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.locateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/locate.app/locate";
+			};
+			name = Debug;
+		};
+		27D530221E73F3C800B0C6DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AZQ652M9DQ;
+				INFOPLIST_FILE = locateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.locateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/locate.app/locate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27D52FFB1E73F3C700B0C6DF /* Build configuration list for PBXProject "locate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D5301B1E73F3C800B0C6DF /* Debug */,
+				27D5301C1E73F3C800B0C6DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27D5301D1E73F3C800B0C6DF /* Build configuration list for PBXNativeTarget "locate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D5301E1E73F3C800B0C6DF /* Debug */,
+				27D5301F1E73F3C800B0C6DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27D530201E73F3C800B0C6DF /* Build configuration list for PBXNativeTarget "locateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D530211E73F3C800B0C6DF /* Debug */,
+				27D530221E73F3C800B0C6DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27D52FF81E73F3C700B0C6DF /* Project object */;
+}
