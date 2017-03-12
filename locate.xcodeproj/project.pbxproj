@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CFA2D231E74D6500054D7FE /* NATViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA2D161E74D6500054D7FE /* NATViewController.swift */; };
+		1CFA2D241E74D6500054D7FE /* NATOperationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA2D171E74D6500054D7FE /* NATOperationCell.swift */; };
+		1CFA2D251E74D6500054D7FE /* NATOperationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA2D181E74D6500054D7FE /* NATOperationType.swift */; };
+		1CFA2D261E74D6500054D7FE /* NATOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA2D191E74D6500054D7FE /* NATOperation.swift */; };
+		1CFA2D271E74D6500054D7FE /* NATMonitoringOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA2D1A1E74D6500054D7FE /* NATMonitoringOperation.swift */; };
+		1CFA2D281E74D6500054D7FE /* NATAdvertisingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA2D1B1E74D6500054D7FE /* NATAdvertisingOperation.swift */; };
+		1CFA2D291E74D6500054D7FE /* NATRangingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA2D1C1E74D6500054D7FE /* NATRangingOperation.swift */; };
 		2739BC2A1E74BAF100B38AD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2739BC291E74BAF100B38AD3 /* Assets.xcassets */; };
 		2739BC2C1E74BD0C00B38AD3 /* MasterVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739BC2B1E74BD0C00B38AD3 /* MasterVenue.swift */; };
 		2739BC2E1E74BF9E00B38AD3 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739BC2D1E74BF9E00B38AD3 /* Images.swift */; };
@@ -65,6 +72,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1CFA2D161E74D6500054D7FE /* NATViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NATViewController.swift; sourceTree = "<group>"; };
+		1CFA2D171E74D6500054D7FE /* NATOperationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NATOperationCell.swift; sourceTree = "<group>"; };
+		1CFA2D181E74D6500054D7FE /* NATOperationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NATOperationType.swift; sourceTree = "<group>"; };
+		1CFA2D191E74D6500054D7FE /* NATOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NATOperation.swift; sourceTree = "<group>"; };
+		1CFA2D1A1E74D6500054D7FE /* NATMonitoringOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NATMonitoringOperation.swift; sourceTree = "<group>"; };
+		1CFA2D1B1E74D6500054D7FE /* NATAdvertisingOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NATAdvertisingOperation.swift; sourceTree = "<group>"; };
+		1CFA2D1C1E74D6500054D7FE /* NATRangingOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NATRangingOperation.swift; sourceTree = "<group>"; };
 		2739BC291E74BAF100B38AD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2739BC2B1E74BD0C00B38AD3 /* MasterVenue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterVenue.swift; sourceTree = "<group>"; };
 		2739BC2D1E74BF9E00B38AD3 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -122,9 +136,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CFA2D131E74D6190054D7FE /* HiBeacon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = HiBeacon;
+			path = locate;
+			sourceTree = "<group>";
+		};
+		1CFA2D141E74D6290054D7FE /* HiBeacon */ = {
+			isa = PBXGroup;
+			children = (
+				1CFA2D161E74D6500054D7FE /* NATViewController.swift */,
+				1CFA2D171E74D6500054D7FE /* NATOperationCell.swift */,
+				1CFA2D181E74D6500054D7FE /* NATOperationType.swift */,
+				1CFA2D191E74D6500054D7FE /* NATOperation.swift */,
+				1CFA2D1A1E74D6500054D7FE /* NATMonitoringOperation.swift */,
+				1CFA2D1B1E74D6500054D7FE /* NATAdvertisingOperation.swift */,
+				1CFA2D1C1E74D6500054D7FE /* NATRangingOperation.swift */,
+			);
+			name = HiBeacon;
+			path = locate;
+			sourceTree = "<group>";
+		};
 		27D52FF71E73F3C700B0C6DF = {
 			isa = PBXGroup;
 			children = (
+				1CFA2D141E74D6290054D7FE /* HiBeacon */,
 				27DA5AC41E741D670018FBA7 /* AWSCognitoIdentityProvider.framework */,
 				27DA5AC51E741D670018FBA7 /* AWSCore.framework */,
 				27DA5AC61E741D670018FBA7 /* AWSDynamoDB.framework */,
@@ -183,6 +221,7 @@
 		27DA5AD21E741F520018FBA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1CFA2D131E74D6190054D7FE /* HiBeacon */,
 				27DA5ADB1E74224C0018FBA7 /* AWSMobileHubHelper.framework */,
 				27DA5AD51E741F610018FBA7 /* libsqlite3.tbd */,
 				27DA5AD31E741F520018FBA7 /* libz.tbd */,
@@ -242,7 +281,7 @@
 				TargetAttributes = {
 					27D52FFF1E73F3C700B0C6DF = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = AZQ652M9DQ;
+						DevelopmentTeam = 4L99V5QC67;
 						ProvisioningStyle = Automatic;
 					};
 					27D530131E73F3C800B0C6DF = {
@@ -315,17 +354,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				27D530061E73F3C800B0C6DF /* MainMenuViewController.swift in Sources */,
+				1CFA2D241E74D6500054D7FE /* NATOperationCell.swift in Sources */,
 				2782A61F1E7434CB00810108 /* PlacesViewCell.swift in Sources */,
+				1CFA2D231E74D6500054D7FE /* NATViewController.swift in Sources */,
 				2796B1E01E74C31900F5E163 /* AWSMobileClient.swift in Sources */,
+				1CFA2D281E74D6500054D7FE /* NATAdvertisingOperation.swift in Sources */,
 				2782A6211E74373000810108 /* Place.swift in Sources */,
+				1CFA2D251E74D6500054D7FE /* NATOperationType.swift in Sources */,
 				2739BC2C1E74BD0C00B38AD3 /* MasterVenue.swift in Sources */,
 				27D530041E73F3C800B0C6DF /* AppDelegate.swift in Sources */,
 				2782A6231E743AB500810108 /* TestViewController.swift in Sources */,
 				2739BC2E1E74BF9E00B38AD3 /* Images.swift in Sources */,
+				1CFA2D261E74D6500054D7FE /* NATOperation.swift in Sources */,
 				2739BC321E74C0B300B38AD3 /* TextPosts.swift in Sources */,
 				27D530241E73F7B800B0C6DF /* QRScannerController.swift in Sources */,
 				2796B1DF1E74C31900F5E163 /* AWSConfiguration.swift in Sources */,
 				2739BC301E74C00D00B38AD3 /* MiscFiles.swift in Sources */,
+				1CFA2D291E74D6500054D7FE /* NATRangingOperation.swift in Sources */,
+				1CFA2D271E74D6500054D7FE /* NATMonitoringOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AZQ652M9DQ;
+				DEVELOPMENT_TEAM = 4L99V5QC67;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sdk/Aws",
@@ -472,7 +518,7 @@
 				);
 				INFOPLIST_FILE = locate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.keanur.locate;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.hawaii.ics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -482,7 +528,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AZQ652M9DQ;
+				DEVELOPMENT_TEAM = 4L99V5QC67;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sdk/Aws",
@@ -490,7 +536,7 @@
 				);
 				INFOPLIST_FILE = locate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.keanur.locate;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.hawaii.ics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

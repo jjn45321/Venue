@@ -79,9 +79,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This is required for ranging.</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>This is required for monitoring.</string>
 </dict>
 </plist>
